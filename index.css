@@ -1,0 +1,184 @@
+
+body {
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: #9dc9ac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    background-color: #919167;
+    color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #919167;
+    color: white;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    background-color: #9dc9ac;
+}
+
+.jogo {
+    display: inline-block;
+    
+    
+}
+
+#gerar {
+    background-color: #218c74;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#gerar:hover {
+    background-color: #1b6c52;
+}
+
+
+
+#resetar {
+    background-color: #d62839;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#resetar:hover {
+    background-color: #b21e2c;
+}
+
+
+#iniciar {
+    background-color: #76448a;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#iniciar:hover {
+    background-color: #5d366f;
+}
+
+
+
+#numeros-sorteados {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    word-break: normal;
+}
+
+.container-numeros {
+    width: 30%;
+}
+
+.cartela-container {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.cartela {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.cartela td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+.cartela td:not(:nth-child(6n)) {
+    border-right: none;
+}
+
+.cartela tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+.cartela th {
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.sorteado {
+    background-color: green;
+}
+
+.numero-sorteado {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+} 
+
+.jogador {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 15px;
+}
